@@ -1,0 +1,31 @@
+# Ignore compiled Rust code and Cargo files
+/target/
+Cargo.lock
+
+# Ignore SQLx database migrations directory
+migrations/
+
+# Ignore generated SQLx code
+/target/sqlx-data/
+
+# Ignore .env files for storing database connection information
+.env
+
+# Ignore any other editor-specific or system-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore log files
+*.log
+
+# Ignore SQLite database files
+*.sqlite
+
+# Ignore build artifacts, if you're using a specific build directory
+/build/
+
+# Ignore configuration
+config.toml
