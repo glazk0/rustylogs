@@ -72,6 +72,8 @@ I welcome contributions from the community. If you have ideas for improvements o
 - [X] Listen to configured channel
 - [X] Create the output with ChatGPT
 - [ ] When new message, generate the output (configurable verification prompt ? i.e: Here is the output that will be send to: ...)
+  - Using local cache system ? 
+  - Stocking message ID in DB so we can delete the output whenever the main message has been deleted
 - [ ] Listen to component (such as the validation stuff)
 - [X] Send the output to *send_to*
 - [ ] Add Docker support

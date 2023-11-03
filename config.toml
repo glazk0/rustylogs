@@ -1,0 +1,14 @@
+key="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"
+prompt="""
+Convert the following changelog into a list of features like this:
+
+```
+**Update**
+
+- Feature A
+- Feature B
+- Feature C
+```
+
+Please remove any emojis, links, or other formatting. Ensure that the generated list does not include the closing message. Do not include paragraphs or other texts, only create the feature list.
+"""

@@ -26,6 +26,3 @@ migrations/
 
 # Ignore build artifacts, if you're using a specific build directory
 /build/
-
-# Ignore configuration
-config.toml

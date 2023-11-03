@@ -4,31 +4,16 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
 pub struct Config {
-    pub discord: Discord,
-    pub openai: OpenAI,
-}
-
-#[derive(Deserialize, Serialize, Clone, Debug)]
-pub struct Discord {
-    pub token: String,
-}
-
-#[derive(Deserialize, Serialize, Clone, Debug)]
-pub struct OpenAI {
-    pub api_key: String,
+    pub key: String,
     pub prompt: String,
 }
 
 impl Default for Config {
     fn default() -> Self {
         Self {
-            discord: Discord {
-                token: String::new(),
-            },
-            openai: OpenAI {
-                api_key: String::new(),
-                prompt: String::new(),
-            },
+            key: "API_KEY".to_string(),
+            prompt: "You are a bot for summarizing updates, you are terse and focus on accuracy"
+                .to_string(),
         }
     }
 }
